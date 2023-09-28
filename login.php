@@ -38,8 +38,8 @@
     <body>
         <form action="#" method="post">
             <div id="header">
-                <img src="banner.png" alt="" class="image-banner" id="banner-one">
-                <img src="banner2.png" alt="" class="image-banner" id="banner-two">
+                <img src="/images/banner.png" alt="" class="image-banner" id="banner-one">
+                <img src="/images/banner2.png" alt="" class="image-banner" id="banner-two">
                 <h1>LOG IN</h1>
             </div>
             <?php if(isset($_GET['error'])){ ?><?php //if the error from line 21 and 24 is triggered, it will shown the error message ?>
