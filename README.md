@@ -1,5 +1,5 @@
 # Introduction
-This is a simple login system made with PHP.
+This is a simple login system made with vanilla PHP.
 
 # Additional information
 *Im using password_verify() function to compare password that users input with the hashed password in database. Its not 100% secure, and i'll streghthen its security in the next version.
