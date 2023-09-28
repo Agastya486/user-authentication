@@ -1,7 +1,7 @@
 # Introduction
 This is a simple login system made with PHP.
 
-# additional information
+# Additional information
 *Im using password_verify() function to compare password that users input with the hashed password in database. Its not 100% secure, and i'll streghthen its security in the next version.
 
 *make sure to use XAMPP/similiar software in order to run the code. Also, you can create and configure the database by adding a id, username, and password
