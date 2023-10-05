@@ -1,6 +1,8 @@
-<?php // ;) ?>
+
 <?php
     include 'conn.php';
+    
+    $link = "signup.php";
     
     if(isset($_POST['btnlogin'])){
         //line 7-8 : collecting the username and password entered by the user
@@ -38,18 +40,19 @@
     <body>
         <form action="#" method="post">
             <div id="header">
-                <img src="/images/banner.png" alt="" class="image-banner" id="banner-one">
-                <img src="/images/banner2.png" alt="" class="image-banner" id="banner-two">
+                <img src="/project/Login System/images/banner2.png" alt="" class="image-banner" id="banner-one">
+                <img src="/project/Login System/images/banner2.png" alt="" class="image-banner" id="banner-two">
                 <h1>LOG IN</h1>
             </div>
             <?php if(isset($_GET['error'])){ ?><?php //if the error from line 21 and 24 is triggered, it will shown the error message ?>
-                <p class='error-alert' id='error-message'><?php echo $_GET['error']?></p>
+                <p class='error-alert'><?php echo $_GET['error']?></p>
             <?php } ?>
             <div id="content">
                 <input type="text" name="username" id="user" placeholder="Username" required>
                 <input type="text" name="password" id="pass" placeholder="Password" required>
                 <input type="submit" value="LOGIN" name="btnlogin">
             </div>
+            <p class="sign">Dont have an account?<a href="<?php echo $link; ?>" class="sign">Sign up here</a></p>
         </form>
     </body>
 </html>
