@@ -1,5 +1,5 @@
-
 <?php
+    session_start();
     include 'conn.php';
     
     $link = "signup.php";
@@ -15,7 +15,9 @@
     
         if(mysqli_num_rows($res) == 1){ //if system find 1 value that user is inputting
             $row = mysqli_fetch_assoc($res); //take and store the value that mysqli_num_rows found
-            $_SESSION['id'] = $row['id']; //create id session
+            $_SESSION['id'] = $row['id']; //create session
+            $_SESSION['username'] = $row['username'];
+            $_SESSION['password'] = $row['password'];
 
             if(password_verify($password, $row['password'])){ //comparing the password user input and the password on database
                 header("location: index.php");

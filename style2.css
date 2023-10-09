@@ -1,0 +1,26 @@
+body{
+    background-color: blanchedalmond;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+}
+
+#hei-user{
+    font-family: 'poppins', sans-serif;
+    font-size: 30px;
+}
+
+.content button{
+    width: 150px;
+    height: 40px;
+    margin-top: 25px;
+    margin-left: 30px;
+    border-radius: 7px;
+    border-color: transparent;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}

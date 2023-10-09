@@ -19,7 +19,7 @@
         $query = "INSERT INTO `2` (username,password) VALUES('$username', '$passwordhash')";
 
         if (disablespecialchara($username)){
-            if($conn->query($query) == true){
+            if($conn->query($query) == true){ //checking if the query is successfully executed
                 header("Location: login.php");
                 mysqli_close();
             }else{
