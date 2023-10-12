@@ -24,3 +24,58 @@ body{
     color: white;
     cursor: pointer;
 }
+
+
+/* for popup menu */
+#container{
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    width: 40%;
+    height: 60%;
+    background-color: white;
+    border-radius: 6px;
+}
+
+#warning{
+    font-family: 'poppins';
+    font-size: 20px;
+}
+#warning span{
+    color: red;
+}
+
+@media screen and (min-width: 450px){
+    #container{
+        left: 15%;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 960px){
+    #container{
+        left: 25%;
+        width: 50%;
+    }
+}
+
+.btn-confirmation{
+    width: 170px;
+    height: 50px;
+    background-color: lime;
+    border-color: transparent;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    margin: 10px 30px;
+    margin-bottom: 0px;
+}
+.btn-confirmation:hover{
+    background-color: limegreen;
+    transition: 0.3s;
+}
